@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playbook de apoio às aulas de Espedito Roza</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              background: "var(--background)",
+              foreground: "var(--foreground)",
+              card: "var(--card)",
+              "card-foreground": "var(--card-foreground)",
+              primary: "var(--primary)",
+              "primary-foreground": "var(--primary-foreground)",
+              muted: "var(--muted)",
+              "muted-foreground": "var(--muted-foreground)",
+              border: "var(--border)",
+              input: "var(--input)",
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['Fira Code', 'monospace'],
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap');
+      
+      :root {
+        --background: #ffffff;
+        --foreground: #09090b;
+        --card: #ffffff;
+        --card-foreground: #09090b;
+        --primary: #18181b;
+        --primary-foreground: #fafafa;
+        --muted: #f4f4f5;
+        --muted-foreground: #71717a;
+        --border: #e4e4e7;
+        --input: #e4e4e7;
+      }
+
+      .dark {
+        --background: #09090b;
+        --foreground: #fafafa;
+        --card: #09090b;
+        --card-foreground: #fafafa;
+        --primary: #fafafa;
+        --primary-foreground: #18181b;
+        --muted: #27272a;
+        --muted-foreground: #a1a1aa;
+        --border: #27272a;
+        --input: #27272a;
+      }
+
+      body {
+        background-color: var(--background);
+        color: var(--foreground);
+        font-family: 'Inter', sans-serif;
+        transition: background-color 0.3s, color 0.3s;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://aistudiocdn.com/react@^19.2.0",
+        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+        "react/": "https://aistudiocdn.com/react@^19.2.0/",
+        "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
+      }
+    }
+    </script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
